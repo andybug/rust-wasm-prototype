@@ -1,0 +1,14 @@
+package clegane:mapgen@0.1.0;
+
+interface map-generator {
+    run: func(tiles: list<float32>, val: float32);
+}
+
+//interface map-generator-input {
+//    tiles: list<float32>;
+//}
+
+world mapgen {
+//    import map-generator-input;
+    export map-generator;
+}

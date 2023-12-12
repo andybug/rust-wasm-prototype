@@ -1,0 +1,6 @@
+interface mapgen-api {
+    type tile-id = u64;
+    type tile-value = float32;
+
+    update-tile: func(tile: tile-id, value: tile-value);
+}

@@ -1,0 +1,20 @@
+[package]
+name = "wasm_component_c"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cargo-component-bindings = "0.5.0"
+rand = "0.8.5"
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata.component]
+package = "component:wasm-component-b"
+
+[package.metadata.component.dependencies]
+
+[workspace]

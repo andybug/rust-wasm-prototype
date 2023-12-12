@@ -1,0 +1,10 @@
+package clegane:mapgen@0.1.0;
+
+interface controller {
+    run: func(size: u64);
+}
+
+world mapgen {
+    import mapgen-api;
+    export controller;
+}

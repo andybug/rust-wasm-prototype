@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = [
+    "host",
+    "host-add",
+    "host-wasmtime",
+    "wasm_module_a",
+    "wasm_module_b",
+    "wasm_component_a",
+]
